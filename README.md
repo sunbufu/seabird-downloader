@@ -7,4 +7,7 @@
 ```
 java -jar seabird-downloader-0.0.1.jar --seabird.target=${目标位置}
 ```
-注：可选择只下载相片或者视频，只需添加`pic`或者`vid`即可。
+也可选择只下载相片或者视频，只需添加`pic`或者`vid`即可。
+```
+java -jar seabird-downloader-0.0.1.jar pic --seabird.target=${目标位置}
+```
