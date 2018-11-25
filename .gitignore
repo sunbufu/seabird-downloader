@@ -1,6 +1,6 @@
 /target/
 !.mvn/wrapper/maven-wrapper.jar
-!/target/seabird-downloader-0.0.1.jar
+!/target/seabird-downloader-*.jar
 
 ### STS ###
 .apt_generated
