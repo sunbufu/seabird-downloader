@@ -44,9 +44,9 @@ public class ProgressBar {
         bar.append("[");
         for (int i = 1; i <= this.barLength; i++) {
             if (i < barSign) {
-                bar.append("-");
+                bar.append("#");
             } else if (i == barSign) {
-                bar.append(">");
+                bar.append("#");
             } else {
                 bar.append(" ");
             }

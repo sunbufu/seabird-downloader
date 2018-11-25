@@ -24,14 +24,15 @@ public class Application {
 
     @PostConstruct
     private void getPicture() {
-        if (argList.isEmpty() || argList.contains("pic") || argList.contains("picture")) {
+        System.out.println("argList=" + argList);
+        if (argList.contains("pic") || !argList.contains("vid")) {
             System.out.println("开始获取相片信息");
             List<PictureDTO> pictureList = seabirdService.getAllPicture();
             System.out.println("相片共计[" + pictureList.size() + "]张");
             seabirdService.downloadBaseDataList(pictureList, SeabirdService.DIR_PIC);
         }
 
-        if (argList.isEmpty() || argList.contains("vid") || argList.contains("video")) {
+        if (argList.contains("vid") || !argList.contains("pic")) {
             System.out.println("开始获取视频信息");
             List<VideoDTO> videoList = seabirdService.getAllVideo();
             System.out.println("视频共计[" + videoList.size() + "]段");
