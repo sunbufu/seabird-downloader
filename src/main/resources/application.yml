@@ -1,0 +1,6 @@
+seabird:
+  host: http://192.168.1.1
+  path:
+    pictureList: /list/pic
+    videoList: /list/video
+  target: /Users/sunbufu/test/seabird
