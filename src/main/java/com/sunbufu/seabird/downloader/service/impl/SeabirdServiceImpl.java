@@ -54,6 +54,7 @@ public class SeabirdServiceImpl implements SeabirdService {
             response = objectMapper.readValue(responseStr, new TypeReference<BaseResponseDTO<List<PictureDTO>>>() {});
         } catch (Exception e) {
             log.error("listPicture error", e);
+            log.error("请检查是否已连接海鸟相机wifi");
         }
         return response;
     }
@@ -80,6 +81,7 @@ public class SeabirdServiceImpl implements SeabirdService {
             response = objectMapper.readValue(responseStr, new TypeReference<BaseResponseDTO<List<VideoDTO>>>() {});
         } catch (Exception e) {
             log.error("listVideo error", e);
+            log.error("请检查是否已连接海鸟相机wifi");
         }
         return response;
     }
